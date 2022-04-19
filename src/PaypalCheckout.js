@@ -2,7 +2,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 export default function PaypalCheckout() {
     return (
-        <PayPalScriptProvider options={{ "client-id": "AZCBfqn-sNB4weArO26X7XzTIF4kIJujwaG7150zOfOJE3tOOHYKczuChMIBvbHMN5BplRJ3pm5GO_zo" }}>
+        <PayPalScriptProvider options={{ "client-id": "API_ID" }}>
             <PayPalButtons
                 createOrder={(data, actions) => {
                     return actions.order.create({
